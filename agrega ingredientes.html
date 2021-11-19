@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="agrega ingredientes.css">
+    <title>agrega ingredientes</title>
+</head>
+<body>
+    <div id="contenedor1">
+        <div class="ingredientes">
+            <div id="contenedor2">
+                <ul id="coso" class="carnes" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <li id="drag1" draggable="true" ondragstart="drag(event)">Pollo</li>
+                    <li id="drag2" draggable="true" ondragstart="drag(event)">Vaca</li>
+                    <li id="drag3" draggable="true" ondragstart="drag(event)">Chancho</li>
+                    <li id="drag4" draggable="true" ondragstart="drag(event)">Pescado</li>
+                </ul>
+            </div>
+            <div id="contenedor2">
+                <ul id="coso" class="verduras"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <li id="drag5" draggable="true" ondragstart="drag(event)">Cebolla</li>
+                    <li id="drag6" draggable="true" ondragstart="drag(event)">Espinaca</li>
+                    <li id="drag7" draggable="true" ondragstart="drag(event)">Acelga</li>
+                    <li id="drag8" draggable="true" ondragstart="drag(event)">Pepino</li>
+                    <li id="drag9" draggable="true" ondragstart="drag(event)">Zukini</li>
+                    <li id="drag10" draggable="true" ondragstart="drag(event)">Papa</li>
+                    <li id="drag11" draggable="true" ondragstart="drag(event)">Calabaza</li>
+                    <li id="drag12" draggable="true" ondragstart="drag(event)">Batata</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ingredientes-que-tengo">
+            <ul id="coso" class="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></ul>
+        </div>
+    </div>
+    <script src="agrega ingredientes.js"></script>
+</body>
+</html>

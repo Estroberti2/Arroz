@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tarea HTML de Renzo</title>
+        <!-- STYLS -->
+        <link rel="stylesheet" href="Arroz.css">
+        <!-- ICONOS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    </head>
+    <body>
+
+    <!-- BANNER -->
+        <header>
+            <nav class="headder-inner">  
+                <a href="" id="logo">
+                    <img src="Marca.gif" alt="marca">
+                </a>                          
+                 <ul>
+                    <li>
+                        <a href="" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#Porque?">¿Porque?</a>
+                    </li>
+                    <li>
+                        <a href="#recetas">Recetas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
+
+    <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="Guisito.png" alt="guisito"></div>
+                <div class="swiper-slide"><img src="Arroz Salteado.jpg" alt="salteado"></div>
+                <!-- <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div> -->
+            </div>
+
+    <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            });
+        </script> 
+        
+    <!-- SECTION WHY?-->
+        <section id="Porque?">
+            <h1><a href="https://media.giphy.com/media/3oEduKOYEB7s41EQP6/giphy.gif"  target="why">Porque?</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut, cum veniam et deleniti sit unde assumenda aliquam nostrum rerum quae facilis expedita incidunt reprehenderit earum aperiam tempore dolorum ratione? Aliquid officiis repellendus tempora atque porro, accusantium nisi recusandae optio.</p>
+        </section>
+        
+    <!-- SECTION RECETAS -->
+        <section  id="recetas">
+            <h1>Recetas</h1>
+            <div class="Recetas">
+
+                <input type="checkbox" id="toggle" style="display:none">
+                <label for="toggle">
+                    <div class="hvrbox">
+                        <img src="Guisito.png" class="hvrbox-layer_bottom">
+                        <div class="hvrbox-layer_top">
+                            <div class="hvrbox-text">Guisito</div>
+                        </div>
+                    </div>
+                </label>
+                <dialog>
+                    <div class="info">
+                        <h1>Guisito</h1>
+                        <h4>Ingredientes</h4>
+                        <ul id="lista-modal" style="list-style-type:disc">
+                           <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                        <p id="text-modal">  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est iusto!
+                        </p>
+                    </div>
+                    <label for="toggle">close</label>
+                </dialog>
+                <div class="hvrbox">
+                    <img src="Arroz Salteado.jpg" class="hvrbox-layer_bottom">
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text">Arroz Salteado</div>
+                    </div>
+                </div>
+                <div class="hvrbox">
+                    <img src="paella.jpg" class="hvrbox-layer_bottom">
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text">Paella</div>
+                    </div>
+                </div>
+                <div class="hvrbox">
+                    <img src="pastel de arroz.png" class="hvrbox-layer_bottom">
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text">Pastel de Arroz</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-wrapper">
+                <div class="icon-redes">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

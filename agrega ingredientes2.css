@@ -1,0 +1,16 @@
+#movible1, #movible2, #movible3, #movible4, #movible5, #movible6, #movible7, #movible8, #movible9, #movible10, #movible11, #movible12 {
+    position: absolute;
+    cursor: move;
+    z-index: 10;
+}
+
+.recetas{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    display:flex;
+}
+.ingredientes{
+    width: 300px;
+    height: 300px;
+}

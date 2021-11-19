@@ -1,0 +1,10 @@
+#boton1{
+    position: absolute;
+    cursor: move;
+    z-index: 10;
+}
+#boton2{
+    position: absolute;
+    cursor: move;
+    z-index: 10;
+}

@@ -1,0 +1,24 @@
+div{
+    height: 200px;
+    width: 200px;
+    top: 400px;
+    left: 400px;
+    margin: 0 auto;
+    border: 1px solid red;
+   
+}
+
+
+b {
+    color: red;
+}
+
+div:hover b{
+    display: none;
+}
+
+div:hover::before{
+    content: "soy un hover";
+    color: blue;
+    font-size: 20px;
+}
